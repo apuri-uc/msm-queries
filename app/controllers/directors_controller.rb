@@ -3,6 +3,14 @@ class DirectorsController < ApplicationController
     render({ :template => "director_templates/list"})
   end
 
+  def giraffe
+    render({ :template => "director_templates/youngest"})
+  end
+
+  def rhino
+    render({ :template => "director_templates/eldest"})
+  end
+
   def show
     the_id = params.fetch("the_id")
 
